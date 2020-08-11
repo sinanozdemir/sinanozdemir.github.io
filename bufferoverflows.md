@@ -3,4 +3,4 @@ Thank you to [the GOAT, Heath Adams](https://github.com/hmaverickadams) for bein
 I have decided to break down BOF attack into two programming languages, Python and Ruby:
 
 1. [BOF with Python](bofPython.md)
-2. 
+2. [BOF with Ruby](bofRuby.md)
