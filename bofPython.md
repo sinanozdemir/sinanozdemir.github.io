@@ -106,5 +106,6 @@ s.connect((RHOST,RPORT))
 s.send(buff + "\r\n")
 s.close()
 ```
-[<= Go Back to Main Menu](index.md)
 [<= Go Back to BOF Menu](bufferoverflows.md)
+
+[<= Go Back to Main Menu](index.md)
