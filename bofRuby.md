@@ -76,3 +76,4 @@ require 'socket'
 
 TCPSocket.open(RHOST,RPORT){ |s| s.puts buff + '\r\n'}
 ```
+[<= Go Back to Main Menu](index.md)
