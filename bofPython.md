@@ -1,4 +1,4 @@
-### Python Templates for BOF                                                                                                        [Go Back](bufferoverflows.md)
+### Python Templates for BOF                                                                                                        
 
 There are different stages of BOF and we'll have different scripts for each stage:
 
