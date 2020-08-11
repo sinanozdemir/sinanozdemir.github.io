@@ -25,7 +25,7 @@ while True:
         print("Debugger crashed at %s bytes" % str(len(buffer)))
         sys.exit
 ```
-### Offset
+### Finding Offset
 ```Python
 #!/usr/bin/python
 
@@ -45,7 +45,7 @@ except:
     print("Debugger crashed at %s bytes" % str(len(buffer)))
     sys.exit
 ```
-### Overwrite EIP
+### Overwriting EIP
 ```Python
 #!/usr/bin/python
 
@@ -66,7 +66,7 @@ except:
     print("Error connecting to server")
     sys.exit
 ```
-### Own EIP
+### Owning EIP
 ```Python
 #!/usr/bin/python
 
@@ -87,7 +87,7 @@ except:
     print("Error connecting to server")
     sys.exit
 ```
-### Shellcode
+### Getting a Shell
 ```Python
 #!/usr/bin/python
 
