@@ -105,3 +105,4 @@ s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 s.connect((RHOST,RPORT))
 s.send(buff + "\r\n")
 s.close()
+```
