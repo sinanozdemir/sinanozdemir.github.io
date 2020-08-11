@@ -24,3 +24,4 @@ rescue Interrupt
     puts "Debugger crashed at #{buffSize} bytes"
 end
 ```
+### Finding Offset
