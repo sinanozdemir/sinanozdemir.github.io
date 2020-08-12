@@ -1,6 +1,6 @@
 ## Welcome to Sinan's GitHub Page
 
-I'll be posting new content whenever I can find time, please make sure to check this blog 
+I'll be posting new content whenever I can find time, please make sure to check this space. 
 
   1. Data Science (Coming up soon)
   2. Exam Reviews (Coming up soon)
@@ -8,4 +8,4 @@ I'll be posting new content whenever I can find time, please make sure to check 
   4. CyberSecLabs Walkthroughs (Coming up soon)
   5. TryHackMe Walkthroughs (Coming up soon)
 
-Thank you for the love and support.
+Thank you for the support.
