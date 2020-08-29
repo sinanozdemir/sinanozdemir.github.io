@@ -23,7 +23,7 @@ Let's see if we can log into "Users" share and enumerate more.
 smbclient \\\\10.10.54.44\\Users
 ```
 Ater the successful login, we can go to "Share" folder. There is an EXE file, what a coincident, hah. Since we know that this is a BOF challenge, we need to download gatekeeper.exe and examine to see if we can somehow exploit it.
-![smbclient_recon](smbclient_recon.png)
+![smbclient_enumerate](smbclient_enumerate.png)
 
 Now, we need to copy this file to a 32 bit Windows machine and carry on with the next steps!
 I promise it will be so much fun.
