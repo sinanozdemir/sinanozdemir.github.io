@@ -13,6 +13,7 @@ We'll be exploiting a machine called [Gatekeeper on TryHackMe.com](https://www.t
 - [Finding the Offset with Python](ExploitingBOFWithPythonOffset.md)
 - [Overwriting the EIP with Python](ExploitingBOFWithPythonOverWriteEIP.md)
 - [Finding Badchars with Python](ExploitingBOFWithPythonBadChars.md)
+- [Finding the Right Module](ExploitingBOFWithPythonFindingModule.md)
 
 
 
