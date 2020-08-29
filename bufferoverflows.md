@@ -8,6 +8,8 @@ I have decided to break down BOF attack into two programming languages, Python a
 Now, let's see all these templates in action. 
 We'll be exploiting a machine called [Gatekeeper on TryHackMe.com](https://www.tryhackme.com/room/gatekeeper), this room is free and created by [The Mayor, Joe Helle](https://github.com/dievus?tab=repositories). In order to use this room, you need to join THM. We'll be using both Python and Ruby templates to exploit this machine and get the root/system level access. Alright, let's dive in...
 
+1. [Gatekeeper Recon](GatekeeperRecon.md)
+
 
 
 
