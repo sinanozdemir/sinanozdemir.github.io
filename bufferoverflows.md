@@ -11,6 +11,8 @@ We'll be exploiting a machine called [Gatekeeper on TryHackMe.com](https://www.t
 1. [Gatekeeper Recon](GatekeeperRecon.md)
 - [Spiking with Python](ExploitingBOFWithPythonSpiking.md)
 - [Finding the Offset with Python](ExploitingBOFWithPythonOffset.md)
+- [Overwriting the EIP with Python](ExploitingBOFWithPythonOverWriteEIP.md)
+- [Finding Badchars with Python](ExploitingBOFWithPythonBadChars.m)
 
 
 
