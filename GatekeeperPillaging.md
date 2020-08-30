@@ -17,3 +17,7 @@ I already have Seatbelt.exe on my Kali machine so let's start a Python server on
 ![Python Server](pythonServer.png)
 
 ![Certutil](certutil.png)
+
+[<= Go Back to BOF Menu](bufferoverflows.md)
+
+[<= Go Back to Main Menu](index.md)
