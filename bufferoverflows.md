@@ -14,6 +14,8 @@ We'll be exploiting a machine called [Gatekeeper on TryHackMe.com](https://www.t
 - [Overwriting the EIP with Python](ExploitingBOFWithPythonOverWriteEIP.md)
 - [Finding Badchars with Python](ExploitingBOFWithPythonBadChars.md)
 - [Finding the Right Module](ExploitingBOFWithPythonFindingModule.md)
+- [Owning the EIP](ExploitingBOFWithPythonOwnEIP.md)
+- [Generating a Shellcode and Getting a Reverse Shell](ExploitingBOFWithPythonShellcode.md)
 
 
 
