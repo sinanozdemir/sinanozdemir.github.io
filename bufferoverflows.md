@@ -20,13 +20,13 @@ BOF with Python
 - [Generating a Shellcode and Getting a Reverse Shell](ExploitingBOFWithPythonShellcode.md)
 
 BOF with Ruby
-- [Spiking with Ruby](ExploitingBOFWithPythonSpiking.md)
-- [Finding the Offset with Ruby](ExploitingBOFWithPythonOffset.md)
-- [Overwriting the EIP with Ruby](ExploitingBOFWithPythonOverWriteEIP.md)
-- [Finding Badchars with Ruby](ExploitingBOFWithPythonBadChars.md)
-- [Finding the Right Module](ExploitingBOFWithPythonFindingModule.md)
-- [Owning the EIP](ExploitingBOFWithPythonOwnEIP.md)
-- [Generating a Shellcode and Getting a Reverse Shell](ExploitingBOFWithPythonShellcode.md)
+- [Spiking with Ruby](ExploitingBOFWithRubySpiking.md)
+- [Finding the Offset with Ruby](ExploitingBOFWithRubyOffset.md)
+- [Overwriting the EIP with Ruby](ExploitingBOFWithRubyOverWriteEIP.md)
+- [Finding Badchars with Ruby](ExploitingBOFWithRubyBadChars.md)
+- [Finding the Right Module](ExploitingBOFWithRubyFindingModule.md)
+- [Owning the EIP](ExploitingBOFWithRubyOwnEIP.md)
+- [Generating a Shellcode and Getting a Reverse Shell](ExploitingBOFWithRubyShellcode.md)
 
 
 
