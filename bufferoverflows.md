@@ -24,7 +24,7 @@ BOF with Ruby
 - [Finding the Offset with Ruby](ExploitingBOFWithRubyOffset.md)
 - [Overwriting the EIP with Ruby](ExploitingBOFWithRubyOverWriteEIP.md)
 - [Finding Badchars with Ruby](ExploitingBOFWithRubyBadChars.md)
-- [Finding the Right Module](ExploitingBOFWithRubyFindingModule.md)
+- [Finding the Right Module](ExploitingBOFWithPythonFindingModule.md)
 - [Owning the EIP](ExploitingBOFWithRubyOwnEIP.md)
 - [Generating a Shellcode and Getting a Reverse Shell](ExploitingBOFWithRubyShellcode.md)
 
