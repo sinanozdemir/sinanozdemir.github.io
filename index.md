@@ -6,6 +6,6 @@ I'll be posting new content whenever I can find time, please make sure to check 
   2. Exam Reviews (Coming soon)
   3. [Buffer over flow examples](bufferoverflows.md)
   4. CyberSecLabs Walkthroughs (Coming soon)
-  5. TryHackMe Walkthroughs (Coming soon)
+  5. [TryHackMe Walkthroughs](TryHackMeWalkthroughs.md)
 
 Thank you for the support.
