@@ -34,6 +34,8 @@ BOF with Ruby
 
 4 [Decrypt Firefox Creds](GatekeeeperDecryptCreds.md)
 
+5 [Becoming Root/System](GatekeeperRoot.md)
+
 
 
 
