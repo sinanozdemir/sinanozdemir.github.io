@@ -14,7 +14,7 @@ Now, we are ready to configure our multi handler first and then run_as modules:
 ![Final Exp](finalRootExp.png)
 ![Runas](msfconsolerunas.png)
 
-After running the last module, we'll receive a meterpreter session and if we check the user id, we'll see that we have admin privileges:
+After running the last module, we'll receive a meterpreter session and if we check the user id and privileges, we'll see that we have admin privileges:
 
 ![Admin User](adminUser.png)
 
