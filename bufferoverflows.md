@@ -32,6 +32,8 @@ BOF with Ruby
 
 3 [Pillaging](GatekeeperPillaging.md)
 
+4 [Decrypt Firefox Creds](GatekeeeperDecryptCreds.md)
+
 
 
 
