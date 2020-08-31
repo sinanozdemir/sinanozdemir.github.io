@@ -4,7 +4,7 @@ Now, we are in the machine we can look for a user flag. Since we are in Desktop,
 
 It looks like there is a file called "user.txt.txt", let's read content of this file with type command:
 ```bash
-type user.txt.txt
+cat user.txt.txt
 ```
 ![User Flag](userFlag.png)
 
