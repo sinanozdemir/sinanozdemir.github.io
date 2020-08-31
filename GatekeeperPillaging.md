@@ -14,7 +14,7 @@ We also need to capture the root flag as well, but since we don't have adequate 
 
 ![Enum Applications](enumApps.png)
 
-Looks like we have "Mozilla Firefox" running, can we gather any existing? We can try to run ```bash post/multi/gather/firefox_creds``` from meterpreter to see if we can find anything:
+Looks like we have "Mozilla Firefox" running, can we gather any existing? We can try to run ```post/multi/gather/firefox_creds``` from meterpreter to see if we can find anything:
 
 ![Firefox Creds](firefoxcreds.png)
 
