@@ -10,13 +10,15 @@ type user.txt.txt
 
 Nice, we have just captured our first flag, let's put this into THM and claim our points.
 
-We also need to capture the root flag as well, but since we don't have adequate privileges as a normal user, we need to find a way to do it. Let's use a program called Seatbelt to help us:
+We also need to capture the root flag as well, but since we don't have adequate privileges as a normal user, we need to find a way to do it. Let's look for applications to see if anything cacthes our interest:
 
-I already have Seatbelt.exe on my Kali machine so let's start a Python server on the Kali machine and on the compromised machine we can certuti.exe to download the file:
+![Enum Applications](enumApps.png)
 
-![Python Server](pythonServer.png)
+Looks like we have "Mozilla Firefox" running, can we gather any existing? We can try to run ```bash post/multi/gather/firefox_creds``` from meterpreter to see if we can find anything:
 
-![Certutil](certutil.png)
+![Firefox Creds](firefoxcreds.png)
+
+Great!.. it looks like meterpreter found and put 4 files into the root directory.
 
 [<= Go Back to BOF Menu](bufferoverflows.md)
 
