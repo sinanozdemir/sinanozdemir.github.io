@@ -11,6 +11,7 @@ Bin Files | New Name
 20200831151017_default_10.10.42.158_ff.ljfn812a.key4_940453.bin | key4.db
 20200831151021_default_10.10.42.158_ff.ljfn812a.logi_385583.bin | logins.json
 
+
 Let's save these files to a new file called "firefox_raw":
 
 ![Firefox_Raw](firefoxRaw.png)
