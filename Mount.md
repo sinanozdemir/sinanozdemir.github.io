@@ -1,4 +1,4 @@
-In this walkthrough, we'll go over a challenge (intermediate - advance) level box called "Mount". Mount is one of the realistic and fun boxes on [Cyberseclabs.co.uk](https://www.cyberseclabs.co.uk).
+In this walkthrough, we'll go over a challenge (intermediate - advance) level box called "Mount". Mount is one of the realistic and hard boxes on [Cyberseclabs.co.uk](https://www.cyberseclabs.co.uk).
 
 ![Mount IP](mountIP.png)
 
@@ -20,7 +20,7 @@ I was hoping to find some user or SPNs (Service Principal Names), but this only 
 
 ![Mount LDAP enum XML](mountLDAPenumXML.png)
 
-My next enumeration was kerberos since the port 88 was open:
+My next enumeration is kerberos since the port 88 was open:
 ```bash
 nmap -p 88 --script=krb5-enum-users --script-args="krb5-enum-users.realm='mount.csl'" 172.31.3.5
 ```
