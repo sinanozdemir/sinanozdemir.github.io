@@ -39,3 +39,4 @@ As we can see there is another domain "dev", let's add that to our /etc/hosts fi
 
 ![CMesS dev domain](CMesS-dev-domain.png)
 
+Now, we can try to use andre@cmess.thm email with the above (blurred) password
