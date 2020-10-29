@@ -39,4 +39,28 @@ As we can see there is another domain "dev", let's add that to our /etc/hosts fi
 
 ![CMesS dev domain](CMesS-dev-domain.png)
 
-Now, we can try to use andre@cmess.thm email with the above (blurred) password
+Now, we can try to use andre@cmess.thm email with the above (blurred) password. Once we login, we can browse to "Content" --> "Media" to see if we can upload a reverse shell:
+
+![Gila admin console](Gila-admin-console.png)
+
+We can upload a txt file to see if there is a file type restriction for upload and then intercept the traffic with BurpSuite:
+
+![Gila burp suite intercept](Gila-burp-suite-intercept.png)
+
+And it looks like, we can only upload media files. Let's think about it for a second, we can upload png, jpeg, jpg, or gif so how do we do that? Let's download PHP reverse shell from https://github.com/pentestmonkey/php-reverse-shell and we need to change the IP address, and port if you would like. Now, change the file extension to gif:
+```bash
+cp php-revshell.php php-revshell.php.gif
+```
+Upload it to the website, but intercept it with BurpSuite and add "GIF89a;" on the top of PHP code:
+
+![Gila BurpSuite intercept](Gila-gif-intercept.png)
+
+![Gila revshell](Gila-revshell.png)
+
+Let's change the file name to "php-revshell.php" on the Gila site:
+
+![Gila php revshell](Gila-revshell-php)
+
+Turn off the proxy and start a netcat listener on our Kali machine ```nc -nlvp 1234``` Now, all we need to do this is visiting cmess.thm/assets/php-revshell.php If all goes well, we should receive a reverse shell back:
+
+![Gila initial foothold](Gila-initial-foothold.png)
