@@ -110,7 +110,7 @@ After that we wait for about one minute and then check ```/tmp``` folder to see 
 
 Now, we can run the bash file with ```/tmp/bash -p```
 
-1[Root](CMesS-Root.png)
+![Root](CMesS-Root.png)
 
 Woww, we have done it, we can grab the root file which has the root flag.
 
