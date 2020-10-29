@@ -59,7 +59,7 @@ Upload it to the website, but intercept it with BurpSuite and add "GIF89a;" on t
 
 Let's change the file name to "php-revshell.php" on the Gila site:
 
-![Gila php revshell](Gila-revshell-php)
+![Gila php revshell](Gila-revshell-php.png)
 
 Turn off the proxy and start a netcat listener on our Kali machine ```nc -nlvp 1234``` Now, all we need to do this is visiting cmess.thm/assets/php-revshell.php If all goes well, we should receive a reverse shell back:
 
