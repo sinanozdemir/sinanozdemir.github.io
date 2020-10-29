@@ -88,7 +88,7 @@ We know that port 22 is open which is SSH so let's try to ssh into the machine w
 ```bash
 ssh andres@cmess.thm
 ```
-![SSH into](CMesS-SSH-Into.png)
+![SSH into]
 
 It worked and we can also see ```user.txt``` file which has the user flag. Last task remaining is to become root. I am again running LinEnum to see if I can find anything interesting that can be used to escalate privileges.
 
