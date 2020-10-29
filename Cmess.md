@@ -116,7 +116,7 @@ Woww, we have done it, we can grab the root file which has the root flag.
 
 I hope you enjoyed this walkthrough.
 
-[<= Go Back to TryHackMe Walkthrouhgs](TryHackMeWalkthroughs.md)
+[<= Go Back to TryHackMe Walkthroughs](TryHackMeWalkthroughs.md)
 
 [<= Go Back to Main Menu](index.md)
 
