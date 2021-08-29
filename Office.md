@@ -60,7 +60,7 @@ Username | Password
 --------- | ---------
 dwight | cowboys1
 
-By using the above credentials, we can successfully log into the admin panel. However, we need to download and install ***php_everywhere*** plugin for this machine. After installing the plugin, let's add a new page and then copy the PHP reverse shell from ![Pentestmonkey GitHub Repo](https://github.com/pentestmonkey/php-reverse-shell) into the PHP Everywhere text box (don't forget to change the IP address and port to yours) and type "php_everywhere" in the body of the page:
+By using the above credentials, we can successfully log into the admin panel. However, we need to download and install ***php_everywhere*** plugin for this machine. After installing the plugin, let's add a new page and then copy the PHP reverse shell from [Pentestmonkey GitHub Repo](https://github.com/pentestmonkey/php-reverse-shell) into the PHP Everywhere text box (don't forget to change the IP address and port to yours) and type "php_everywhere" in the body of the page:
 ![PHP Everywhere Reverse Shell](office-php-everywhere.png)
 ![PHP Everywhere Page Preview](office-wpscan-php_everywhere.png)
 
