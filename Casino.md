@@ -1,4 +1,4 @@
-In this walkthrough, we'll go over one of the machines from the challenge labs on [Cyberseclabs.co.uk](https://www.cyberseclabs.co.uk).
+In this walkthrough, we'll go over one of the machines called ***Casino*** from the challenge labs on [Cyberseclabs.co.uk](https://www.cyberseclabs.co.uk).
 
 ![Casino IP](casinoIP.png)
 
