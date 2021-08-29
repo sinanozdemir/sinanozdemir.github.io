@@ -3,6 +3,7 @@ Here is the list of boxes and challenges I have been doing:
 #### Beginner Labs
 1. [Glass](Glass.md)
 2. [Zero (Active Directory)](Zero.md)
+3. [Shock](Shock.md)
 
 #### Challenge Labs
 1. [Mount](Mount.md)
