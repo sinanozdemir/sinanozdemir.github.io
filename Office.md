@@ -83,7 +83,7 @@ It looks like the port 10000 is open so we can forward this port back to our loc
 When we visit http://127.0.0.1:9050/session_login.cgi, I see that Webmin is running:
 ![Office Webmin](office-webmin.png)
 
-At this point, we can use Metasploit to exploit Webmin server, but let's do it manually without Metasploit. 
+At this point, we can use Metasploit to exploit the Webmin server, but let's do it manually without Metasploit. 
 
 We can clone the following GitHub repo from https://github.com/MuirlandOracle/CVE-2019-15107 and just run the exploit as shown below:
 
