@@ -39,7 +39,7 @@ While browsing, on the team page, we can see that one of the team members is a F
 After seeing this, I can check for a potential SSTI (Server Side Template Injection) vulnerability. I followed the process from [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection)
 Now, in the search box we can do the following tests:
 
-```python
+```bash
 ${7*7}
 {{7*7}} 
 {{7*'7'}} 
