@@ -93,7 +93,7 @@ In terms of the privilege escalation, I look at the sudo version and OS distribu
 
 ![Casino OS/Sudo Version](casino-OS-release.png)
 
-At this point, we can check if this machine is vulnerable to ***CVE-2021-3156 (Sudo Baron Samedit)*** vulnerability. We can use the following repo ![Sudo Baron Samedit](https://github.com/worawit/CVE-2021-3156)
+At this point, we can check if this machine is vulnerable to ***CVE-2021-3156 (Sudo Baron Samedit)*** vulnerability. We can use the following repo [Sudo Baron Samedit](https://github.com/worawit/CVE-2021-3156)
 From this repo, we can use ***exploit_nss.py*** to see if we can get a root shell:
 
 ![Casino Root](casino-root.png)
