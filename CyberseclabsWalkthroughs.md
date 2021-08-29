@@ -7,5 +7,6 @@ Here is the list of boxes and challenges I have been doing:
 #### Challenge Labs
 1. [Mount](Mount.md)
 2. [Casino](Casino.md)
+3. [Office](Office.md)
 
 [<= Go Back to Main Menu](index.md)
