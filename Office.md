@@ -85,6 +85,6 @@ When we visit http://127.0.0.1:9050/session_login.cgi, I see that Webmin is runn
 
 At this point, we can use Metasploit to exploit the Webmin server, but let's do it manually without Metasploit. 
 
-We can clone the following GitHub repo from https://github.com/MuirlandOracle/CVE-2019-15107 and just run the exploit as shown below:
+We can clone the following GitHub repo from [Webmin CVE-2019-15107](https://github.com/MuirlandOracle/CVE-2019-15107) and just run the exploit as shown below:
 
 ![Office Root](office-manual-webmin.png)
