@@ -6,6 +6,7 @@ Here is the list of boxes and challenges I have been doing:
 3. [Shock](Shock.md)
 4. [Sam](Sam.md)
 5. [Pie](Pie.md)
+6. [Lazy](Lazy.md)
 
 #### Challenge Labs
 1. [Mount](Mount.md)
