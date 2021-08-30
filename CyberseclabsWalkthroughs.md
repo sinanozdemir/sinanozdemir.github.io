@@ -5,6 +5,7 @@ Here is the list of boxes and challenges I have been doing:
 2. [Zero (Active Directory)](Zero.md)
 3. [Shock](Shock.md)
 4. [Sam](Sam.md)
+5. [Pie](Pie.md)
 
 #### Challenge Labs
 1. [Mount](Mount.md)
