@@ -15,7 +15,7 @@ One thing we can notice is that there is a link to the admin portal. When we cli
 ![Pie Admin](pieadmin.png)
 ![Pie Version](pieversion.png)
 
-A quick Google search reveals the following exploit https://packetstormsecurity.com/files/157624/Pi-hole-4.4-Remote-Code-Execution-Privilege-Escalation.html. However, this exploit requires a valid cookie.
+A quick Google search reveals the following exploit [Pie-Hole Exploit](https://packetstormsecurity.com/files/157624/Pi-hole-4.4-Remote-Code-Execution-Privilege-Escalation.html). However, this exploit requires a valid cookie.
 Let's send the request to Burp and grab the cookie:
 ![Pie Burp](pieBurp.png)
 
