@@ -128,6 +128,7 @@ After running the exploit as follows `python jexboss.py -u http://jacobtheboss.b
 ![Jacob foothold](jacob-initial-foothold.png)
 
 If we run linpeas and we can find the below two important findings:
+
 1 - Binary Process Permissions:
 
 ![Jacob linpeas](jacob-linpeas-binary-processes.png)
