@@ -4,7 +4,7 @@ In this walkthrough, we'll go over one of the machines called ***Office*** from 
 
 Let's start the scanning process with nmap:
 ```bash
-nmap -sTV -p- -n 172.31.3.1
+nmap -sTV -sC -p- -n 172.31.3.1
 ```
 We'll see that there are three ports open:
 ```bash
