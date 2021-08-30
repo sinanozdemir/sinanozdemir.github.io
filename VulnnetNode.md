@@ -1,4 +1,4 @@
-In this walkthrough, we'll go over a challenge (intermediate) level box called "Vulnnet Node" on [TryHackMe](https://tryhackme.com/room/vulnnetnode) 
+In this walkthrough, we'll go over a challenge (intermediate) level box called ***Vulnnet Node*** on [TryHackMe](https://tryhackme.com/room/vulnnetnode) 
 
 ![Vulnnet-Node](vulnnetNode.png)
 
