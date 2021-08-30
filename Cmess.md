@@ -1,4 +1,4 @@
-In this walkthrough, we'll go over a challenge (intermediate) level box called ***CMesS***. CMesS is one of the Linux Privesc boxes on [TryHackMe](https://tryhackme.com/room/cmess) and it was also one of the challenges from [TCM's Linux Privilege Escalation Course on Udemy](https://www.udemy.com/course/linux-privilege-escalation-for-beginners/).
+In this walkthrough, we'll go over a challenge (intermediate) level box called ***CMesS***. ***CMesS*** is one of the Linux Privesc boxes on [TryHackMe](https://tryhackme.com/room/cmess) and it was also one of the challenges from [TCM's Linux Privilege Escalation Course on Udemy](https://www.udemy.com/course/linux-privilege-escalation-for-beginners/).
 
 ![CMesS](CMesS.png)
 ![CMesS IP](CMesS-IP.png)
