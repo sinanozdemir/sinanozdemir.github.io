@@ -128,15 +128,15 @@ After running the exploit as follows `python jexboss.py -u http://jacobtheboss.b
 ![Jacob foothold](jacob-initial-foothold.png)
 
 If we run linpeas and we can find the below two important findings:
-1. Binary Process Permissions:
+1 - Binary Process Permissions:
 
 ![Jacob linpeas](jacob-linpeas-binary-processes.png)
 
-2. MySQL root login with no password:
+2 - MySQL root login with no password:
 
 ![Jacob mysql](jacob-linpeas-mysql-root-login.png)
 
-3. SUID:
+3 - SUID:
 
 ![Jacob SUID](jacob-linpeas-SUID.png)
 
