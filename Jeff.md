@@ -137,7 +137,7 @@ jeff | 123-My-N4M3-1z-J3ff-123
 After running `/usr/bin/sudo /usr/bin/crontab -e`, then press escape and type `:!/bin/sh` which will give you a root shell:
 ![Jeff root](jeff-root-txt.png)
 
-Finally, we have done it, we can grab the root file which has the root flag.
+Finally, we have done it, we the root user.
 
 I hope you enjoyed this walkthrough.
 
