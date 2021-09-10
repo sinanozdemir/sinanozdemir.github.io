@@ -1,5 +1,8 @@
 Here is a list a few machines that I have been doing:
 
+#### Easy
+1. [Mustacciho](Mustacciho.md)
+
 #### Medium
 1. [CMesS](Cmess.md)
 2. [Vulnnet-Node](VulnnetNode.md)
