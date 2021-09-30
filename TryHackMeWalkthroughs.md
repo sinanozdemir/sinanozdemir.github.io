@@ -11,6 +11,6 @@ Here is a list a few machines that I have been doing:
 
 #### Hard
 1. [Jeff](Jeff.md)
-2. [YoF](YoF.md)
+2. [Year of the Fox](YoF.md)
 
 [<= Go Back to Main Menu](index.md)
