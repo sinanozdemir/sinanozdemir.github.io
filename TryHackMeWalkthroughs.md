@@ -2,6 +2,7 @@ Here is a list a few machines that I have been doing:
 
 #### Easy
 - [Mustacciho](Mustacciho.md)
+- [Archangel](Archangel.md)
 
 #### Medium
 - [CMesS](Cmess.md)
