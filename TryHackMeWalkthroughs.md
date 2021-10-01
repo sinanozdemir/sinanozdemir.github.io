@@ -3,6 +3,7 @@ Here is a list a few machines that I have been doing:
 #### Easy
 - [Mustacciho](Mustacciho.md)
 - [Archangel](Archangel.md)
+- [Glitch](Glitch.md)
 
 #### Medium
 - [CMesS](Cmess.md)
