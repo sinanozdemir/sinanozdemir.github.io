@@ -39,6 +39,7 @@ We can run dirsearch on this new website `rsearch -u http://mafialive.thm/ -r -f
 ![Archangel Dirsearch](aa-new-domain-dirsearch.png)
 
 We then check "robots.txt" and find another page "test.php" also dirsearch found that page:
+
 ![Archangel Test PHP](aa-new-domain-test-php.png)
 
 After visiting http://mafialive.thm/test.php, we can see that the page is executing PHP:
