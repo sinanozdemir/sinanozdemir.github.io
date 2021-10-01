@@ -35,7 +35,7 @@ Let's add that to the "/etc/hosts" file. Upon visiting the site, we can see the 
 
 ![Archangel New Domain](aa-new-domain.png)
 
-We can run dirsearch on this new website `dirsearch -u http://mafialive.thm/ -r -f -t 50 -x 302,400,403,500,503 -w /usr/share/we/wordlists/dirb/big.txt`:
+We can run dirsearch on this new website `dirsearch -u http://mafialive.thm/ -r -f -t 50 -x 302,400,403,500,503 -w /usr/share/wordlists/dirb/big.txt`:
 ![Archangel Dirsearch](aa-new-domain-dirsearch.png)
 
 We then check "robots.txt" and find another page "test.php" also dirsearch found that page:
