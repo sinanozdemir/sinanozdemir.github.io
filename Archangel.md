@@ -80,7 +80,7 @@ I downloaded php-revershell from pentestmonkey and transferred it to the target 
 ![Archangel PHP Reverse Shell](aa-php-revshell.png)
 ![Archangel Initial Foothold](aa-initial-foothold.png)
 
-#### Lateral Movement
+### Lateral Movement
 We can first look at "/etc/crontab" and it shows that there is a cronjob running by archangel:
 ![Archangel Crontab](aa-crontab.png)
 
