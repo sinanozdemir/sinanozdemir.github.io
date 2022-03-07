@@ -29,6 +29,8 @@ Since we are admin, we can try to become the system by using ```getsystem``` com
 That was a long journey and I hope you enjoyed this walkthrough.
 Thank you for reading.
 
-[<= Go Back to BOF Menu](bufferoverflows.md)
+[<= Go Back to Gatekeeper Menu](GatekeeperMain.md)
+
+[<= Go Back to BOF Menu](BOFMain.md)
 
 [<= Go Back to Main Menu](index.md)
