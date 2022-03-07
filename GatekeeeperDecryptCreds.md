@@ -24,6 +24,8 @@ firefox_decrypt firefox_raw/
 
 As we can see we have a usernaem and password, let's see what we can do with these..
 
-[<= Go Back to BOF Menu](bufferoverflows.md)
+[<= Go Back to Gatekeeper Menu](GatekeeperMain.md)
+
+[<= Go Back to BOF Menu](BOFMain.md)
 
 [<= Go Back to Main Menu](index.md)
