@@ -88,3 +88,7 @@ At this point, we can use Metasploit to exploit the Webmin server, but let's do 
 We can clone the following GitHub repo from [Webmin CVE-2019-15107](https://github.com/MuirlandOracle/CVE-2019-15107) and just run the exploit as shown below:
 
 ![Office Root](office-manual-webmin.png)
+
+[<= Go Back to Cyberseclabs Walkthrouhgs](CyberseclabsWalkthroughs.md)
+
+[<= Go Back to Main Menu](index.md)
