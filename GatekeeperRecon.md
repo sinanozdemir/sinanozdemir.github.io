@@ -29,6 +29,8 @@ Ater the successful login, we can go to "Share" folder. There is an EXE file cal
 Now, we need to copy this file to a 32 bit Windows machine and carry on with the next steps!
 I promise it will be so much fun.
 
-[<= Go Back to BOF Menu](bufferoverflows.md)
+[<= Go Back to Gatekeeper Menu](GatekeeperMain.md)
+
+[<= Go Back to BOF Menu](BOFMain.md)
 
 [<= Go Back to Main Menu](index.md)
