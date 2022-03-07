@@ -26,3 +26,7 @@ We can download the exploit with `wget https://packetstormsecurity.com/files/dow
 We should receive a shell back as root user:
 
 ![Pie Root](pieroot.png)
+
+[<= Go Back to Cyberseclabs Walkthrouhgs](CyberseclabsWalkthroughs.md)
+
+[<= Go Back to Main Menu](index.md)
