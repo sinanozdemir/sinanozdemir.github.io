@@ -59,6 +59,8 @@ Now, it is time to fire away our Ruby script ```ruby shellcode.rb```
 
 Nice, we are now in the machine as natbat user. Next, we'll look for some information...
 
-[<= Go Back to BOF Menu](bufferoverflows.md)
+[<= Go Back to Gatekeeper Menu](GatekeeperMain.md)
+
+[<= Go Back to BOF Menu](BOFMain.md)
 
 [<= Go Back to Main Menu](index.md)
